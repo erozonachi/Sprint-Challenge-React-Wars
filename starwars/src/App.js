@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsHeader from './components/StarWarsHeader';
 import StarWarsList from './components/StarWarsList';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      previousPage: null,
+      nextPage: null,
     };
   }
 
@@ -23,18 +26,33 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
-        console.log(data);
+        this.setState({ 
+          starwarsChars: data.results,
+          previousPage: data.previous,
+          nextPage: data.next,
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handlePrevious = () => {
+    if (this.state.previousPage) {
+      this.getCharacters(this.state.previousPage);
+    }
+  }
+
+  handleNext = () => {
+    if (this.state.nextPage) {
+      this.getCharacters(this.state.nextPage);
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <StarWarsHeader prevHandler={this.handlePrevious} nextHandler={this.handleNext} />
         <StarWarsList warItems={this.state.starwarsChars} />
       </div>
     );

@@ -121,7 +121,7 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 
 ## Stretch Problems
 
-- [ ] Build a pagination system that will allow you to load the next page of data
+- [x] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters()`.
 - console.log() the data coming back from the server.

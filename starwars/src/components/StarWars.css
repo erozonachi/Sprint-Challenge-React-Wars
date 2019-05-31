@@ -47,3 +47,32 @@
   flex-direction: column;
   width: 19%;
 }
+
+.war-item .item-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: .5em;
+  font-weight: bold;
+  margin: 0 1em;
+}
