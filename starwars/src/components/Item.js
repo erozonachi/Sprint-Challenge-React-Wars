@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VehicleItem = (props) => (
+const Item = (props) => (
   <li>
     <a href={props.url} target='_blank'>
       {props.label}
@@ -8,4 +8,4 @@ const VehicleItem = (props) => (
   </li>
 );
 
-export default VehicleItem;
+export default Item;
