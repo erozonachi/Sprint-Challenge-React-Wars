@@ -24,13 +24,28 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React is a declarative and powerful user interface library for rapidly building and deploying large/complex applications. React solved the following problems;
 
-- [ ] Describe state.
+It efficiently bares and manages the application loads such as handling events and making changes to DOM elements on the client side (the browser) with the help a simple engine called Virtual DOM. These loads were ideally cumbersome to handle by the traditional DOM on the browser. React's component-based design and architecture makes it easier for developers to rapidly build and deploy complex web applications from small reusable and encapsulated pieces of codes called components.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+
+Thinking in React simply means that a developer's thought process towards building a web application should be, to first take a critical look of the UI mock design and the data his/her application will be dealing with. Next,
+- the developer should decompose the entire UI into a hierarchical tree of components.
+- the developer should build a static version of the app using React.
+- The developer should identify the optimal representation of the UI state.
+- The developer should identify what components should the UI state live in.
+- The developer should add inverse data flow, this is achieved by passing state data around as props and providing a way of updating the state data from outside the state residence.
+
+- [x] Describe state.
+
+It is one of the data models used in React applications, it is private to the component where it lives and also mutable only within that component. It can be passed around as props to other components. When the state is changed the right way, components are re-rendered.
+
+- [x] Describe props.
+
+It is the second of the two data models used in React applications, it is a structure through which data (including functions) are passed from one component to another. It is important to note that props are immutable.
 
 ## Project Set Up
 
