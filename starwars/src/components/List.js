@@ -6,7 +6,7 @@ const List = (props) => (
     <h3>{props.label}s</h3>
     <ul>
       {props.itemList.map((item, index) => 
-        <Item url={item} label={`${props.label} ${index + 1}`} />
+        <Item key={index+1} url={item} label={`${props.label} ${index + 1}`} />
       )}
     </ul>
   </div>
