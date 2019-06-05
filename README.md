@@ -24,34 +24,49 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React is a declarative and powerful user interface library for rapidly building and deploying large/complex applications. React solved the following problems;
 
-- [ ] Describe state.
+It efficiently bares and manages the application loads such as handling events and making changes to DOM elements on the client side (the browser) with the help a simple engine called Virtual DOM. These loads were ideally cumbersome to handle by the traditional DOM on the browser. React's component-based design and architecture makes it easier for developers to rapidly build and deploy complex web applications from small reusable and encapsulated pieces of codes called components.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+
+Thinking in React simply means that a developer's thought process towards building a web application should be, to first take a critical look of the UI mock design and the data his/her application will be dealing with. Next,
+- the developer should decompose the entire UI into a hierarchical tree of components.
+- the developer should build a static version of the app using React.
+- The developer should identify the optimal representation of the UI state.
+- The developer should identify what components should the UI state live in.
+- The developer should add inverse data flow, this is achieved by passing state data around as props and providing a way of updating the state data from outside the state residence.
+
+- [x] Describe state.
+
+It is one of the data models used in React applications, it is private to the component where it lives and also mutable only within that component. It can be passed around as props to other components. When the state is changed the right way, components are re-rendered.
+
+- [x] Describe props.
+
+It is the second of the two data models used in React applications, it is a structure through which data (including functions) are passed from one component to another. It is important to note that props are immutable.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!)
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
+- [x] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
+- [x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] PM then will count the HW as done by  merging the branch back into master.
 
 Please note:
 
@@ -89,24 +104,24 @@ Your data set will look like this:
 
 Your finished project must include all of the following requirements:
 
-- [ ] A list of Star Wars Characters rendered to the screen.
-- [ ] You must have at least one list element for each star wars character in the data set.
-- [ ] The list elements must all be minimally styled. (Don't rely on browser default styles.)
+- [x] A list of Star Wars Characters rendered to the screen.
+- [x] You must have at least one list element for each star wars character in the data set.
+- [x] The list elements must all be minimally styled. (Don't rely on browser default styles.)
 
 Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, classes, and files.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, classes, and files.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
 
-- [ ] Build a pagination system that will allow you to load the next page of data
+- [x] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters()`.
 - console.log() the data coming back from the server.

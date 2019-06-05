@@ -1,0 +1,78 @@
+.war-list {
+  display: flex;
+  width: 100%;
+}
+
+.war-list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.war-list ul .war-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: .5em 1%;
+  padding: .5em;
+  border-radius: .5em;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  background-color: wheat;
+}
+
+.war-item h3 {
+  width: 100%;
+  margin-bottom: 1em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.war-item p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19%;
+  margin-bottom: .5em;
+}
+
+.war-item p .label {
+  font-weight: bold;
+}
+
+.war-item .item-list {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+}
+
+.war-item .item-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: .5em;
+  font-weight: bold;
+  margin: 0 1em;
+}
